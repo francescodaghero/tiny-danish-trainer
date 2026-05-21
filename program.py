@@ -517,7 +517,9 @@ def _read_run_config_from_form():
 def _refresh_text_answer_from_ui():
     answer_el = el("text-answer")
     if answer_el is not None:
-        app_state.session.text_answer = str(answer_el.value or "")
+        lowered = str(answer_el.value or "").lower()
+        app_state.session.text_answer = lowered
+        answer_el.value = lowered
 
 
 def _refresh_verb_answers_from_ui():
@@ -529,7 +531,9 @@ def _refresh_verb_answers_from_ui():
     for field in card.verb_fields:
         node = el(f"verb-input-{field.key}")
         if node is not None:
-            app_state.session.verb_answers[field.key] = str(node.value or "")
+            lowered = str(node.value or "").lower()
+            app_state.session.verb_answers[field.key] = lowered
+            node.value = lowered
 
 
 @when("click", "#tabs-nav")
@@ -609,7 +613,9 @@ def on_verb_submit(event):
 
 @when("input", "#text-answer")
 def on_text_input(event):
-    app_state.session.text_answer = str(event.target.value or "")
+    lowered = str(event.target.value or "").lower()
+    app_state.session.text_answer = lowered
+    event.target.value = lowered
 
 
 @when("input", "#verb-fields")
@@ -620,7 +626,9 @@ def on_verb_input(event):
     key = target.getAttribute("data-field") or ""
     if not key:
         return
-    app_state.session.verb_answers[key] = str(target.value or "")
+    lowered = str(target.value or "").lower()
+    app_state.session.verb_answers[key] = lowered
+    target.value = lowered
 
 
 @when("click", "#app")
