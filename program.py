@@ -366,6 +366,7 @@ def _render_verb(card):
                         {"correct_text": escape(expected_value)},
                     )
             else:
+                row_class = "border border-green-600 bg-green-100 rounded-xl p-3"
                 input_class += (
                     " text-green-800 font-bold border-green-700 bg-green-50 "
                     "focus:outline-none focus:ring-0"
