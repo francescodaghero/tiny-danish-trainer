@@ -30,14 +30,29 @@ body {
 
 #mcq-choices .mcq-choice {
   width: 100%;
+  max-width: 100%;
   min-height: 3rem;
   border-width: 1px;
   border-style: solid;
   border-radius: 0.75rem;
   padding: 0.65rem 0.9rem;
+  display: block;
   text-align: left;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   font-weight: 600;
   transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+#text-answer-form > * {
+  min-width: 0;
+}
+
+#text-answer-result {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 #mcq-choices .mcq-choice-default {
@@ -91,6 +106,16 @@ body {
 @media (max-width: 640px) {
   #tabs-nav {
     flex-direction: column;
+  }
+
+  #train-study .card-body {
+    overflow-x: clip;
+  }
+
+  #text-hint-btn,
+  #text-answer,
+  #text-answer-result {
+    width: 100%;
   }
 }
 
