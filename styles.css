@@ -55,6 +55,14 @@ body {
   word-break: break-word;
 }
 
+#verb-fields [id^="verb-result-"] {
+  width: 100%;
+  min-height: 3rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 #mcq-choices .mcq-choice-default {
   background-color: #ffffff;
   border-color: #9ca3af;

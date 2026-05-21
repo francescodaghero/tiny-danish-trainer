@@ -8,7 +8,7 @@
 		<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="https://pyscript.net/releases/2026.3.1/core.css" />
 		<script type="module" src="https://pyscript.net/releases/2026.3.1/core.js"></script>
-		<link rel="stylesheet" href="./styles.css?v=20260521c" />
+		<link rel="stylesheet" href="./styles.css?v=20260521d" />
 	</head>
 	<body data-theme="light">
 		<main id="app" class="min-h-screen py-8 px-4">
@@ -168,12 +168,14 @@
 						<button type="button" data-action="answer-choice" data-choice="{{choice_attr}}" class="{{choice_class}}">{{choice_text}}</button>
 					</template>
 					<template id="tpl-verb-field">
-						<div class="grid grid-cols-1 md:grid-cols-[170px_1fr_auto] gap-2">
+						<div class="grid grid-cols-1 md:grid-cols-[170px_1fr_auto] gap-2 {{row_class}}">
 							<label class="label"><span class="label-text">{{field_label}}</span></label>
-							<input id="verb-input-{{field_key}}" data-field="{{field_key}}" class="{{input_class}}" type="text" value="{{field_value}}" {{readonly_attr}} />
+							<div class="min-w-0">
+								<input id="verb-input-{{field_key}}" data-field="{{field_key}}" class="{{input_class}}" type="text" value="{{field_value}}" {{readonly_attr}} />
+								<div id="verb-result-{{field_key}}" class="{{result_class}}">{{result_html}}</div>
+							</div>
 							<button type="button" data-action="verb-hint" data-field="{{field_key}}" class="btn btn-outline" {{hint_disabled}}>Hint</button>
 						</div>
-						{{wrong_line}}
 					</template>
 					<template id="tpl-text-result-wrong">
 						<span class="line-through text-red-700 mr-2">{{wrong_text}}</span><span class="text-red-800 font-bold">{{correct_text}}</span>
@@ -181,13 +183,10 @@
 					<template id="tpl-text-result-correct-only">
 						<span class="text-red-800 font-bold">{{correct_text}}</span>
 					</template>
-					<template id="tpl-verb-wrong-line">
-						<p class="text-xs text-red-700 mt-1"><span class="line-through">{{wrong_text}}</span></p>
-					</template>
 				</div>
 
 			</div>
 		</main>
-		<script type="py" config="./python.toml?v=20260521b" src="./program.py?v=20260521b"></script>
+		<script type="py" config="./python.toml?v=20260521c" src="./program.py?v=20260521c"></script>
 	</body>
 </html>

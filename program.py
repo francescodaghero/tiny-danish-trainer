@@ -333,8 +333,10 @@ def _render_verb(card):
 
     for field in card.verb_fields:
         value = app_state.session.verb_answers.get(field.key, "")
-        wrong_line = ""
         input_class = "input input-bordered"
+        row_class = ""
+        result_class = "input input-bordered hidden items-center"
+        result_html = ""
 
         if feedback:
             expected_value = str(expected_map.get(field.key, field.answer))
@@ -344,25 +346,44 @@ def _render_verb(card):
             )
 
             if is_wrong:
-                value = expected_value
-                input_class += " input-error text-red-700 font-bold"
+                input_class += " hidden"
+                row_class = "border border-red-600 bg-red-100 rounded-xl p-3"
+                result_class = (
+                    "input input-bordered inline-flex items-center text-red-800 "
+                    "font-bold border-red-700 bg-red-50"
+                )
                 if provided_value.strip():
-                    wrong_line = _render_template(
-                        "tpl-verb-wrong-line",
-                        {"wrong_text": escape(provided_value)},
+                    result_html = _render_template(
+                        "tpl-text-result-wrong",
+                        {
+                            "wrong_text": escape(provided_value),
+                            "correct_text": escape(expected_value),
+                        },
                     )
+                else:
+                    result_html = _render_template(
+                        "tpl-text-result-correct-only",
+                        {"correct_text": escape(expected_value)},
+                    )
+            else:
+                input_class += (
+                    " text-green-800 font-bold border-green-700 bg-green-50 "
+                    "focus:outline-none focus:ring-0"
+                )
 
         parts.append(
             _render_template(
                 "tpl-verb-field",
                 {
+                    "row_class": row_class,
                     "field_label": escape(field.label),
                     "field_key": escape(field.key, quote=True),
                     "input_class": input_class,
                     "field_value": escape(str(value), quote=True),
+                    "result_class": result_class,
+                    "result_html": result_html,
                     "readonly_attr": "readonly" if feedback else "",
                     "hint_disabled": "disabled" if feedback else "",
-                    "wrong_line": wrong_line,
                 },
             )
         )
@@ -380,7 +401,7 @@ def _render_verb(card):
         feedback_el.textContent = "All verb forms are correct"
         feedback_el.classList.add("ok")
     else:
-        feedback_el.textContent = "Incorrect forms are shown with struck-through answers and corrected entries."
+        feedback_el.textContent = ""
         feedback_el.classList.add("bad")
 
 
