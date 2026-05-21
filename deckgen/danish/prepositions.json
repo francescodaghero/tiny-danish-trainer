@@ -1,0 +1,22 @@
+[
+    {
+        "sentence": "Jeg skal gå [...] butikken [...] lørdag.",
+        "preposition": ["i", "om"]
+    },
+    {
+        "sentence": "Han bor [...] København.",
+        "preposition": ["i"]
+    },
+    {
+        "sentence": "Bogen ligger [...] bordet.",
+        "preposition": ["på"]
+    },
+    {
+        "sentence": "Vi mødes [...] klokken 18.",
+        "preposition": ["om"]
+    },
+    {
+        "sentence": "Hun arbejder [...] en restaurant.",
+        "preposition": ["på"]
+    }
+]

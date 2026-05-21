@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+.flask-session/
+runtime-state.json
+.venv
+/audio
+output/
+app/static

@@ -1,0 +1,96 @@
+:root {
+  --bg-a: #f7f2e9;
+  --bg-b: #dbeaf1;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 5%, rgba(255, 209, 152, 0.45), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(127, 196, 230, 0.4), transparent 45%),
+    linear-gradient(160deg, var(--bg-a), var(--bg-b));
+}
+
+#app .card {
+  border-radius: 1rem;
+}
+
+#study-prompt-primary,
+#study-prompt-secondary {
+  overflow-wrap: anywhere;
+}
+
+#mcq-choices button {
+  min-height: 3rem;
+}
+
+#mcq-choices .mcq-choice {
+  width: 100%;
+  min-height: 3rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  text-align: left;
+  font-weight: 600;
+  transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+}
+
+#mcq-choices .mcq-choice-default {
+  background-color: #ffffff;
+  border-color: #9ca3af;
+  color: #111827;
+}
+
+#mcq-choices .mcq-choice-default:hover {
+  background-color: #f3f4f6;
+}
+
+#mcq-choices .mcq-choice-correct {
+  background-color: #15803d;
+  border-color: #166534;
+  color: #f0fdf4;
+}
+
+#mcq-choices .mcq-choice-wrong {
+  background-color: #b91c1c;
+  border-color: #991b1b;
+  color: #fef2f2;
+}
+
+#mcq-choices .mcq-choice-muted {
+  background-color: #e5e7eb;
+  border-color: #d1d5db;
+  color: #374151;
+}
+
+#verb-fields .grid {
+  align-items: center;
+}
+
+#text-feedback.ok,
+#verb-feedback.ok {
+  color: rgb(22 101 52);
+  font-weight: 600;
+}
+
+#text-feedback.bad,
+#verb-feedback.bad {
+  color: rgb(153 27 27);
+  font-weight: 600;
+}
+
+#failed-only:disabled + span {
+  opacity: 0.5;
+}
+
+@media (max-width: 640px) {
+  #tabs-nav {
+    flex-direction: column;
+  }
+}
+
