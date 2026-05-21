@@ -1,0 +1,890 @@
+[
+    {
+        "english": "to deliver",
+        "imperative": "aflever",
+        "infinite": "aflevere",
+        "present": "afleverer",
+        "past": "afleverede",
+        "past_participle": "har afleveret"
+    },
+    {
+        "english": "to work",
+        "imperative": "arbejd",
+        "infinite": "arbejde",
+        "present": "arbejder",
+        "past": "arbejdede",
+        "past_participle": "har arbejdet"
+    },
+    {
+        "english": "to shave",
+        "imperative": "barber",
+        "infinite": "barbere",
+        "present": "barberer",
+        "past": "barberede",
+        "past_participle": "har barberet"
+    },
+    {
+        "english": "to start",
+        "imperative": "begynd",
+        "infinite": "begynde",
+        "present": "begynder",
+        "past": "begyndte",
+        "past_participle": "har begyndt"
+    },
+    {
+        "english": "to visit",
+        "imperative": "besøg",
+        "infinite": "besøge",
+        "present": "besøger",
+        "past": "besøgte",
+        "past_participle": "har besøgt"
+    },
+    {
+        "english": "to pay",
+        "imperative": "betal",
+        "infinite": "betale",
+        "present": "betaler",
+        "past": "betalte",
+        "past_participle": "har betalt"
+    },
+    {
+        "english": "to stay",
+        "imperative": "bliv",
+        "infinite": "blive",
+        "present": "bliver",
+        "past": "blev",
+        "past_participle": "er blevet"
+    },
+    {
+        "english": "to become",
+        "imperative": "bliv",
+        "infinite": "blive",
+        "present": "bliver",
+        "past": "blev",
+        "past_participle": "er blevet"
+    },
+    {
+        "english": "to blow",
+        "imperative": "blæs",
+        "infinite": "blæse",
+        "present": "blæser",
+        "past": "blæste",
+        "past_participle": "har blæst"
+    },
+    {
+        "english": "to live",
+        "imperative": "bo",
+        "infinite": "bo",
+        "present": "bor",
+        "past": "boede",
+        "past_participle": "har boet"
+    },
+    {
+        "english": "to use",
+        "imperative": "brug",
+        "infinite": "bruge",
+        "present": "bruger",
+        "past": "brugte",
+        "past_participle": "har brugt"
+    },
+    {
+        "english": "to cycle",
+        "imperative": "cykl",
+        "infinite": "cykle",
+        "present": "cykler",
+        "past": "cyklede",
+        "past_participle": "har cyklet"
+    },
+    {
+        "english": "to share",
+        "imperative": "del",
+        "infinite": "dele",
+        "present": "deler",
+        "past": "delte",
+        "past_participle": "har delt"
+    },
+    {
+        "english": "to drink",
+        "imperative": "drik",
+        "infinite": "drikke",
+        "present": "drikker",
+        "past": "drak",
+        "past_participle": "har drukket"
+    },
+    {
+        "english": "to cultivate",
+        "imperative": "dyrk",
+        "infinite": "dyrke",
+        "present": "dyrker",
+        "past": "dyrkede",
+        "past_participle": "har dyrket"
+    },
+    {
+        "english": "to love",
+        "imperative": "elsk",
+        "infinite": "elske",
+        "present": "elsker",
+        "past": "elskede",
+        "past_participle": "har elsket"
+    },
+    {
+        "english": "to find",
+        "imperative": "find",
+        "infinite": "finde",
+        "present": "finder",
+        "past": "fandt",
+        "past_participle": "har fundet"
+    },
+    {
+        "english": "to move",
+        "imperative": "flyt",
+        "infinite": "flytte",
+        "present": "flytter",
+        "past": "flyttede",
+        "past_participle": "har flyttet"
+    },
+    {
+        "english": "to explain",
+        "imperative": "forklar",
+        "infinite": "forklare",
+        "present": "forklarer",
+        "past": "forklarede",
+        "past_participle": "har forklaret"
+    },
+    {
+        "english": "to understand",
+        "imperative": "forstå",
+        "infinite": "forstå",
+        "present": "forstår",
+        "past": "forstod",
+        "past_participle": "har forstået"
+    },
+    {
+        "english": "to get",
+        "imperative": "få",
+        "infinite": "få",
+        "present": "får",
+        "past": "fik",
+        "past_participle": "har fået"
+    },
+    {
+        "english": "to give",
+        "imperative": "giv",
+        "infinite": "give",
+        "present": "giver",
+        "past": "gav",
+        "past_participle": "har givet"
+    },
+    {
+        "english": "to rejoice",
+        "imperative": "glæd",
+        "infinite": "glæde",
+        "present": "glæder",
+        "past": "glædede",
+        "past_participle": "har glædet"
+    },
+    {
+        "english": "to do",
+        "imperative": "gør",
+        "infinite": "gøre",
+        "present": "gør",
+        "past": "gjorde",
+        "past_participle": "har gjort"
+    },
+    {
+        "english": "to go",
+        "imperative": "gå",
+        "infinite": "gå",
+        "present": "går",
+        "past": "gik",
+        "past_participle": "har gået"
+    },
+    {
+        "english": "to have",
+        "imperative": "hav",
+        "infinite": "have",
+        "present": "har",
+        "past": "havde",
+        "past_participle": "har haft"
+    },
+    {
+        "english": "to be called",
+        "imperative": "hed",
+        "infinite": "hedde",
+        "present": "hedder",
+        "past": "hed",
+        "past_participle": "har heddet"
+    },
+    {
+        "english": "to fetch",
+        "imperative": "hent",
+        "infinite": "hente",
+        "present": "henter",
+        "past": "hentede",
+        "past_participle": "har hentet"
+    },
+    {
+        "english": "to help",
+        "imperative": "hjælp",
+        "infinite": "hjælpe",
+        "present": "hjælper",
+        "past": "hjalp",
+        "past_participle": "har hjulpet"
+    },
+    {
+        "english": "to hang",
+        "imperative": "hæng",
+        "infinite": "hænge",
+        "present": "hænger",
+        "past": "hang",
+        "past_participle": "har hængt"
+    },
+    {
+        "english": "to hear",
+        "imperative": "hør",
+        "infinite": "høre",
+        "present": "hører",
+        "past": "hørte",
+        "past_participle": "har hørt"
+    },
+    {
+        "english": "to be interested",
+        "imperative": "interesser",
+        "infinite": "interessere",
+        "present": "interesserer",
+        "past": "interesserede",
+        "past_participle": "har interesseret"
+    },
+    {
+        "english": "to invite",
+        "imperative": "inviter",
+        "infinite": "invitere",
+        "present": "inviterer",
+        "past": "inviterede",
+        "past_participle": "har inviteret"
+    },
+    {
+        "english": "to know",
+        "imperative": "kend",
+        "infinite": "kende",
+        "present": "kender",
+        "past": "kendte",
+        "past_participle": "har kendt"
+    },
+    {
+        "english": "to look",
+        "imperative": "kig",
+        "infinite": "kigge",
+        "present": "kigger",
+        "past": "kiggede",
+        "past_participle": "har kigget"
+    },
+    {
+        "english": "to prepare",
+        "imperative": "klar",
+        "infinite": "klare",
+        "present": "klarer",
+        "past": "klarede",
+        "past_participle": "har klaret"
+    },
+    {
+        "english": "to cost",
+        "imperative": "kost",
+        "infinite": "koste",
+        "present": "koster",
+        "past": "kostede",
+        "past_participle": "har kostet"
+    },
+    {
+        "english": "to buy",
+        "imperative": "køb",
+        "infinite": "købe",
+        "present": "køber",
+        "past": "købte",
+        "past_participle": "har købt"
+    },
+    {
+        "english": "to drive",
+        "imperative": "kør",
+        "infinite": "køre",
+        "present": "kører",
+        "past": "kørte",
+        "past_participle": "har kørt"
+    },
+    {
+        "english": "to make noise",
+        "imperative": "larm",
+        "infinite": "larme",
+        "present": "larmer",
+        "past": "larmede",
+        "past_participle": "har larmet"
+    },
+    {
+        "english": "to let",
+        "imperative": "lad",
+        "infinite": "lade",
+        "present": "lader",
+        "past": "lod",
+        "past_participle": "har ladet"
+    },
+    {
+        "english": "to play",
+        "imperative": "leg",
+        "infinite": "lege",
+        "present": "leger",
+        "past": "legede",
+        "past_participle": "har leget"
+    },
+    {
+        "english": "to live",
+        "imperative": "lev",
+        "infinite": "leve",
+        "present": "lever",
+        "past": "levede",
+        "past_participle": "har levet"
+    },
+    {
+        "english": "to lie",
+        "imperative": "lig",
+        "infinite": "ligge",
+        "present": "ligger",
+        "past": "lå",
+        "past_participle": "har ligget"
+    },
+    {
+        "english": "to close",
+        "imperative": "luk",
+        "infinite": "lukke",
+        "present": "lukker",
+        "past": "lukkede",
+        "past_participle": "har lukket"
+    },
+    {
+        "english": "to sound",
+        "imperative": "lyd",
+        "infinite": "lyde",
+        "present": "lyder",
+        "past": "lød",
+        "past_participle": "har lydt"
+    },
+    {
+        "english": "to listen",
+        "imperative": "lyt",
+        "infinite": "lytte",
+        "present": "lytter",
+        "past": "lyttede",
+        "past_participle": "har lyttet"
+    },
+    {
+        "english": "to learn",
+        "imperative": "lær",
+        "infinite": "lære",
+        "present": "lærer",
+        "past": "lærte",
+        "past_participle": "har lært"
+    },
+    {
+        "english": "to read",
+        "imperative": "læs",
+        "infinite": "læse",
+        "present": "læser",
+        "past": "læste",
+        "past_participle": "har læst"
+    },
+    {
+        "english": "to run",
+        "imperative": "løb",
+        "infinite": "løbe",
+        "present": "løber",
+        "past": "løb",
+        "past_participle": "har løbet"
+    },
+    {
+        "english": "to meet",
+        "imperative": "mød",
+        "infinite": "møde",
+        "present": "møder",
+        "past": "mødte",
+        "past_participle": "har mødt"
+    },
+    {
+        "english": "to enjoy",
+        "imperative": "nyd",
+        "infinite": "nyde",
+        "present": "nyder",
+        "past": "nød",
+        "past_participle": "har nydt"
+    },
+    {
+        "english": "to notice",
+        "imperative": "læg mærke til",
+        "infinite": "lægge mærke til",
+        "present": "lægger mærke til",
+        "past": "lagde mærke til",
+        "past_participle": "har lagt mærke til"
+    },
+    {
+        "english": "to wish",
+        "imperative": "ønsk",
+        "infinite": "ønske",
+        "present": "ønsker",
+        "past": "ønskede",
+        "past_participle": "har ønsket"
+    },
+    {
+        "english": "to practice",
+        "imperative": "øv",
+        "infinite": "øve",
+        "present": "øver",
+        "past": "øvede",
+        "past_participle": "har øvet"
+    },
+    {
+        "english": "to take care of",
+        "imperative": "pas",
+        "infinite": "passe",
+        "present": "passer",
+        "past": "passede",
+        "past_participle": "har passet"
+    },
+    {
+        "english": "to plan",
+        "imperative": "planlæg",
+        "infinite": "planlægge",
+        "present": "planlægger",
+        "past": "planlagde",
+        "past_participle": "har planlagt"
+    },
+    {
+        "english": "to try",
+        "imperative": "prøv",
+        "infinite": "prøve",
+        "present": "prøver",
+        "past": "prøvede",
+        "past_participle": "har prøvet"
+    },
+    {
+        "english": "to count / think",
+        "imperative": "regn",
+        "infinite": "regne",
+        "present": "regner",
+        "past": "regnede",
+        "past_participle": "har regnet"
+    },
+    {
+        "english": "to travel",
+        "imperative": "rejs",
+        "infinite": "rejse",
+        "present": "rejser",
+        "past": "rejste",
+        "past_participle": "har rejst"
+    },
+    {
+        "english": "to call",
+        "imperative": "ring",
+        "infinite": "ringe",
+        "present": "ringer",
+        "past": "ringede",
+        "past_participle": "har ringet"
+    },
+    {
+        "english": "to clean up",
+        "imperative": "ryd",
+        "infinite": "rydde",
+        "present": "rydder",
+        "past": "ryddede",
+        "past_participle": "har ryddet"
+    },
+    {
+        "english": "to smoke",
+        "imperative": "røg",
+        "infinite": "ryge",
+        "present": "ryger",
+        "past": "røg",
+        "past_participle": "har røget"
+    },
+    {
+        "english": "to miss",
+        "imperative": "savner",
+        "infinite": "savne",
+        "present": "savner",
+        "past": "savnede",
+        "past_participle": "har savnet"
+    },
+    {
+        "english": "to see",
+        "imperative": "se",
+        "infinite": "se",
+        "present": "ser",
+        "past": "så",
+        "past_participle": "har set"
+    },
+    {
+        "english": "to send",
+        "imperative": "send",
+        "infinite": "sende",
+        "present": "sender",
+        "past": "sendte",
+        "past_participle": "har sendt"
+    },
+    {
+        "english": "to sit",
+        "imperative": "sid",
+        "infinite": "sidde",
+        "present": "sidder",
+        "past": "sad",
+        "past_participle": "har siddet"
+    },
+    {
+        "english": "to say",
+        "imperative": "sig",
+        "infinite": "sige",
+        "present": "siger",
+        "past": "sagde",
+        "past_participle": "har sagt"
+    },
+    {
+        "english": "to change",
+        "imperative": "skift",
+        "infinite": "skifte",
+        "present": "skifter",
+        "past": "skiftede",
+        "past_participle": "har skiftet"
+    },
+    {
+        "english": "to shine",
+        "imperative": "skin",
+        "infinite": "skinne",
+        "present": "skinner",
+        "past": "skinnede",
+        "past_participle": "har skinnet"
+    },
+    {
+        "english": "to write",
+        "imperative": "skriv",
+        "infinite": "skrive",
+        "present": "skriver",
+        "past": "skrev",
+        "past_participle": "har skrevet"
+    },
+    {
+        "english": "to hurry",
+        "imperative": "skynd",
+        "infinite": "skynde",
+        "present": "skynder",
+        "past": "skyndte",
+        "past_participle": "har skyndt"
+    },
+    {
+        "english": "to argue",
+        "imperative": "skænds",
+        "infinite": "skændes",
+        "present": "skændes",
+        "past": "skændtes",
+        "past_participle": "har skændtes"
+    },
+    {
+        "english": "to relax",
+        "imperative": "slap af",
+        "infinite": "slappe af",
+        "present": "slapper af",
+        "past": "slappede af",
+        "past_participle": "har slappet af"
+    },
+    {
+        "english": "to turn off",
+        "imperative": "sluk",
+        "infinite": "slukke",
+        "present": "slukker",
+        "past": "slukkede",
+        "past_participle": "har slukket"
+    },
+    {
+        "english": "to taste",
+        "imperative": "smag",
+        "infinite": "smage",
+        "present": "smager",
+        "past": "smagte",
+        "past_participle": "har smagt"
+    },
+    {
+        "english": "to talk",
+        "imperative": "snak",
+        "infinite": "snakke",
+        "present": "snakker",
+        "past": "snakkede",
+        "past_participle": "har snakket"
+    },
+    {
+        "english": "to snow",
+        "imperative": "sne",
+        "infinite": "sne",
+        "present": "sner",
+        "past": "sneede",
+        "past_participle": "har sneet"
+    },
+    {
+        "english": "to sleep",
+        "imperative": "sov",
+        "infinite": "sove",
+        "present": "sover",
+        "past": "sov",
+        "past_participle": "har sovet"
+    },
+    {
+        "english": "to play",
+        "imperative": "spil",
+        "infinite": "spille",
+        "present": "spiller",
+        "past": "spillede",
+        "past_participle": "har spillet"
+    },
+    {
+        "english": "to eat",
+        "imperative": "spis",
+        "infinite": "spise",
+        "present": "spiser",
+        "past": "spiste",
+        "past_participle": "har spist"
+    },
+    {
+        "english": "to ask",
+        "imperative": "spørg",
+        "infinite": "spørge",
+        "present": "spørger",
+        "past": "spurgte",
+        "past_participle": "har spurgt"
+    },
+    {
+        "english": "to stop",
+        "imperative": "stands",
+        "infinite": "standse",
+        "present": "standser",
+        "past": "standsede",
+        "past_participle": "har standset"
+    },
+    {
+        "english": "to start",
+        "imperative": "start",
+        "infinite": "starte",
+        "present": "starter",
+        "past": "startede",
+        "past_participle": "har startet"
+    },
+    {
+        "english": "to stop",
+        "imperative": "stop",
+        "infinite": "stoppe",
+        "present": "stopper",
+        "past": "stoppede",
+        "past_participle": "har stoppet"
+    },
+    {
+        "english": "to vacuum",
+        "imperative": "støvsug",
+        "infinite": "støvsuge",
+        "present": "støvsuger",
+        "past": "støvsugede",
+        "past_participle": "har støvsuget"
+    },
+    {
+        "english": "to stand",
+        "imperative": "stå",
+        "infinite": "stå",
+        "present": "står",
+        "past": "stod",
+        "past_participle": "har stået"
+    },
+    {
+        "english": "to answer",
+        "imperative": "svar",
+        "infinite": "svare",
+        "present": "svarer",
+        "past": "svarede",
+        "past_participle": "har svaret"
+    },
+    {
+        "english": "to swim",
+        "imperative": "svøm",
+        "infinite": "svømme",
+        "present": "svømmer",
+        "past": "svømmede",
+        "past_participle": "har svømmet"
+    },
+    {
+        "english": "to think",
+        "imperative": "synes",
+        "infinite": "synes",
+        "present": "synes",
+        "past": "syntes",
+        "past_participle": "har syntes"
+    },
+    {
+        "english": "to sell",
+        "imperative": "sælg",
+        "infinite": "sælge",
+        "present": "sælger",
+        "past": "solgte",
+        "past_participle": "har solgt"
+    },
+    {
+        "english": "to set",
+        "imperative": "sæt",
+        "infinite": "sætte",
+        "present": "sætter",
+        "past": "satte",
+        "past_participle": "har sat"
+    },
+    {
+        "english": "to search",
+        "imperative": "søg",
+        "infinite": "søge",
+        "present": "søger",
+        "past": "søgte",
+        "past_participle": "har søgt"
+    },
+    {
+        "english": "to take",
+        "imperative": "tag",
+        "infinite": "tage",
+        "present": "tager",
+        "past": "tog",
+        "past_participle": "har taget"
+    },
+    {
+        "english": "to speak",
+        "imperative": "tal",
+        "infinite": "tale",
+        "present": "taler",
+        "past": "talte",
+        "past_participle": "har talt"
+    },
+    {
+        "english": "to believe",
+        "imperative": "tro",
+        "infinite": "tro",
+        "present": "tror",
+        "past": "troede",
+        "past_participle": "har troet"
+    },
+    {
+        "english": "to train",
+        "imperative": "træn",
+        "infinite": "træne",
+        "present": "træner",
+        "past": "trænede",
+        "past_participle": "har trænet"
+    },
+    {
+        "english": "to turn on",
+        "imperative": "tænd",
+        "infinite": "tænde",
+        "present": "tænder",
+        "past": "tændte",
+        "past_participle": "har tændt"
+    },
+    {
+        "english": "to think",
+        "imperative": "tænk",
+        "infinite": "tænke",
+        "present": "tænker",
+        "past": "tænkte",
+        "past_participle": "har tænkt"
+    },
+    {
+        "english": "to be",
+        "imperative": "vær",
+        "infinite": "være",
+        "present": "er",
+        "past": "var",
+        "past_participle": "har været"
+    },
+    {
+        "english": "to wash",
+        "imperative": "vask",
+        "infinite": "vaske",
+        "present": "vasker",
+        "past": "vaskede",
+        "past_participle": "har vasket"
+    },
+    {
+        "english": "to wait",
+        "imperative": "vent",
+        "infinite": "vente",
+        "present": "venter",
+        "past": "ventede",
+        "past_participle": "har ventet"
+    },
+    {
+        "english": "to disappear",
+        "imperative": "væk",
+        "infinite": "vække",
+        "present": "vækker",
+        "past": "vækkede",
+        "past_participle": "har vækket"
+    },
+    {
+        "english": "to weigh",
+        "imperative": "vej",
+        "infinite": "veje",
+        "present": "vejer",
+        "past": "vejede",
+        "past_participle": "har vejet"
+    },
+    {
+        "english": "to open",
+        "imperative": "åbn",
+        "infinite": "åbne",
+        "present": "åbner",
+        "past": "åbnede",
+        "past_participle": "har åbnet"
+    },
+    {
+        "english": "to have",
+        "imperative": "hav",
+        "infinite": "have",
+        "present": "har",
+        "past": "havde",
+        "past_participle": "har haft"
+    },
+    {
+        "english": "to be",
+        "imperative": "vær",
+        "infinite": "være",
+        "present": "er",
+        "past": "var",
+        "past_participle": "har været"
+    },
+    {
+        "english": "can",
+        "imperative": "",
+        "infinite": "kunne",
+        "present": "kan",
+        "past": "kunne",
+        "past_participle": "har kunnet"
+    },
+    {
+        "english": "to be full",
+        "imperative": "",
+        "infinite": "mætte",
+        "present": "mætter",
+        "past": "mættede",
+        "past_participle": "har mættet"
+    },
+    {
+        "english": "should",
+        "imperative": "",
+        "infinite": "skulle",
+        "present": "skal",
+        "past": "skulle",
+        "past_participle": "har skullet"
+    },
+    {
+        "english": "would/want",
+        "imperative": "",
+        "infinite": "ville",
+        "present": "vil",
+        "past": "ville",
+        "past_participle": "har villet"
+    }
+]

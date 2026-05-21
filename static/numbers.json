@@ -1,0 +1,482 @@
+{
+    "ordinal": [
+        [
+            "første",
+            1
+        ],
+        [
+            "anden",
+            2
+        ],
+        [
+            "tredje",
+            3
+        ],
+        [
+            "fjerde",
+            4
+        ],
+        [
+            "femte",
+            5
+        ],
+        [
+            "sjette",
+            6
+        ],
+        [
+            "syvende",
+            7
+        ],
+        [
+            "ottende",
+            8
+        ],
+        [
+            "niende",
+            9
+        ],
+        [
+            "tiende",
+            10
+        ],
+        [
+            "ellevte",
+            11
+        ],
+        [
+            "tolvte",
+            12
+        ],
+        [
+            "trettende",
+            13
+        ],
+        [
+            "fjortende",
+            14
+        ],
+        [
+            "femtende",
+            15
+        ],
+        [
+            "sekstende",
+            16
+        ],
+        [
+            "syttende",
+            17
+        ],
+        [
+            "attende",
+            18
+        ],
+        [
+            "nittende",
+            19
+        ],
+        [
+            "tyvende",
+            20
+        ],
+        [
+            "tredivte",
+            30
+        ],
+        [
+            "fyrretyvende",
+            40
+        ],
+        [
+            "halvtredsindstyvende",
+            50
+        ],
+        [
+            "tresindstyvende",
+            60
+        ],
+        [
+            "halvfjerdsindstyvende",
+            70
+        ],
+        [
+            "firsindstyvende",
+            80
+        ],
+        [
+            "halvfemsindstyvende",
+            90
+        ],
+        [
+            "hundredte",
+            100
+        ],
+        [
+            "tusindte",
+            1000
+        ],
+        [
+            "millionte",
+            1000000
+        ]
+    ],
+    "cardinal": [
+        [
+            "nul",
+            0
+        ],
+        [
+            "en",
+            1
+        ],
+        [
+            "to",
+            2
+        ],
+        [
+            "tre",
+            3
+        ],
+        [
+            "fire",
+            4
+        ],
+        [
+            "fem",
+            5
+        ],
+        [
+            "seks",
+            6
+        ],
+        [
+            "syv",
+            7
+        ],
+        [
+            "otte",
+            8
+        ],
+        [
+            "ni",
+            9
+        ],
+        [
+            "ti",
+            10
+        ],
+        [
+            "elleve",
+            11
+        ],
+        [
+            "tolv",
+            12
+        ],
+        [
+            "tretten",
+            13
+        ],
+        [
+            "fjorten",
+            14
+        ],
+        [
+            "femten",
+            15
+        ],
+        [
+            "seksten",
+            16
+        ],
+        [
+            "sytten",
+            17
+        ],
+        [
+            "atten",
+            18
+        ],
+        [
+            "nitten",
+            19
+        ],
+        [
+            "tyve",
+            20
+        ],
+        [
+            "tyve",
+            20
+        ],
+        [
+            "treogtyve",
+            23
+        ],
+        [
+            "syvogtyve",
+            27
+        ],
+        [
+            "tredive",
+            30
+        ],
+        [
+            "treogtredive",
+            33
+        ],
+        [
+            "syvogtredive",
+            37
+        ],
+        [
+            "fyrre",
+            40
+        ],
+        [
+            "treogfyrre",
+            43
+        ],
+        [
+            "syvogfyrre",
+            47
+        ],
+        [
+            "halvtreds",
+            50
+        ],
+        [
+            "treoghalvtreds",
+            53
+        ],
+        [
+            "syvoghalvtreds",
+            57
+        ],
+        [
+            "tres",
+            60
+        ],
+        [
+            "treogtres",
+            63
+        ],
+        [
+            "syvogtres",
+            67
+        ],
+        [
+            "halvfjerds",
+            70
+        ],
+        [
+            "treoghalvfjerds",
+            73
+        ],
+        [
+            "syvoghalvfjerds",
+            77
+        ],
+        [
+            "firs",
+            80
+        ],
+        [
+            "treogfirs",
+            83
+        ],
+        [
+            "syvogfirs",
+            87
+        ],
+        [
+            "halvfems",
+            90
+        ],
+        [
+            "treoghalvfems",
+            93
+        ],
+        [
+            "syvoghalvfems",
+            97
+        ],
+        [
+            "et hundrede",
+            100
+        ],
+        [
+            "et tusind",
+            1000
+        ],
+        [
+            "ti tusind",
+            10000
+        ],
+        [
+            "en million",
+            1000000
+        ],
+        [
+            "et hundrede seksogtyve",
+            126
+        ],
+        [
+            "et hundrede enogtredive",
+            131
+        ],
+        [
+            "et hundrede treogtredive",
+            133
+        ],
+        [
+            "et hundrede halvfems",
+            190
+        ],
+        [
+            "et hundrede seksoghalvfems",
+            196
+        ],
+        [
+            "to hundrede fem",
+            205
+        ],
+        [
+            "to hundrede femten",
+            215
+        ],
+        [
+            "to hundrede treogfyrre",
+            243
+        ],
+        [
+            "tre hundrede fireogtyve",
+            324
+        ],
+        [
+            "tre hundrede niogtyve",
+            329
+        ],
+        [
+            "tre hundrede enoghalvtreds",
+            351
+        ],
+        [
+            "tre hundrede toogfirs",
+            382
+        ],
+        [
+            "fem hundrede treogtredive",
+            533
+        ],
+        [
+            "seks hundrede nioghalvtreds",
+            659
+        ],
+        [
+            "syv hundrede fem",
+            705
+        ],
+        [
+            "syv hundrede femoghalvtreds",
+            755
+        ],
+        [
+            "syv hundrede treoghalvfems",
+            793
+        ],
+        [
+            "otte hundrede femoghalvtreds",
+            855
+        ],
+        [
+            "otte hundrede nioghalvtreds",
+            859
+        ],
+        [
+            "otte hundrede tres",
+            860
+        ],
+        [
+            "et tusind et hundrede syv",
+            1107
+        ],
+        [
+            "et tusind fire hundrede femogtredive",
+            1435
+        ],
+        [
+            "to tusind fem hundrede tyve",
+            2520
+        ],
+        [
+            "to tusind seks hundrede femoghalvfjerds",
+            2675
+        ],
+        [
+            "tre tusind fem hundrede otteogfyrre",
+            3548
+        ],
+        [
+            "tre tusind seks hundrede seksten",
+            3616
+        ],
+        [
+            "fire tusind to hundrede otteoghalvtreds",
+            4258
+        ],
+        [
+            "fire tusind fem hundrede otteogtyve",
+            4528
+        ],
+        [
+            "fire tusind seks hundrede tolv",
+            4612
+        ],
+        [
+            "fire tusind otte hundrede tolv",
+            4812
+        ],
+        [
+            "fem tusind fem hundrede treoghalvtreds",
+            5553
+        ],
+        [
+            "fem tusind fem hundrede otteoghalvtreds",
+            5558
+        ],
+        [
+            "seks tusind fem hundrede femten",
+            6515
+        ],
+        [
+            "seks tusind fem hundrede femoghalvfjerds",
+            6575
+        ],
+        [
+            "syv tusind to hundrede femogtyve",
+            7225
+        ],
+        [
+            "syv tusind otte hundrede fireoghalvfjerds",
+            7874
+        ],
+        [
+            "syv tusind ni hundrede femogtyve",
+            7925
+        ],
+        [
+            "otte tusind tre hundrede tres",
+            8360
+        ],
+        [
+            "ni tusind to hundrede firs",
+            9280
+        ],
+        [
+            "ni tusind ni hundrede niogtyve",
+            9929
+        ]
+    ]
+}
