@@ -1,0 +1,46 @@
+{
+    "sentences" : [
+            {"english": "It is sunny", "translation":"Solen skinner"},
+            {"english": "It is raining", "translation":"Det regner"},
+            {"english": "It is snowing", "translation":"Det sner"},
+            {"english": "It is windy", "translation":"Det blæser"},
+            {"english": "It is cloudy", "translation":"Det er overskyet"},
+            {"english": "It is hot", "translation":"Det er varmt"},
+            {"english": "It is cold", "translation":"Det er koldt"},
+            {"english": "It is humid", "translation":"Det er fugtigt"},
+            {"english": "It is stormy", "translation":"Det er stormfuldt"},
+            {"english": "It is foggy", "translation":"Det er tåget"},
+            {"english": "It is icy", "translation":"Det er iset"}
+    ],
+    "house": [
+        {"english": "kitchen", "translation": "køkken"},
+        {"english": "living room", "translation": "stue"},
+        {"english": "bedroom", "translation": "soveværelse"},
+        {"english": "bathroom", "translation": "badeværelse"},
+        {"english": "dining room", "translation": "spisestue"},
+        {"english": "garage", "translation": "garage"},
+        {"english": "attic", "translation": "loft"},
+        {"english": "basement", "translation": "kælder"},
+        {"english": "garden", "translation": "have"},
+        {"english": "balcony", "translation": "altan"},
+        {"english": "hallway", "translation": "gang"},
+        {"english": "living room", "translation": "opholdsstue"},
+        {"english": "office", "translation": "kontor"},
+        {"english": "laundry room", "translation": "vaskerum"},
+        {"english": "pantry", "translation": "spisekammer"},
+        {"english": "playroom", "translation": "legetøjrum"},
+        {"english": "sunroom", "translation": "solrum"},
+        {"english": "library", "translation": "bibliotek"},
+        {"english": "gym", "translation": "fitnesscentrum"},
+    ],
+    "family": [
+        {"english": "mother", "translation": "mor"},
+        {"english": "father", "translation": "far"},
+        {"english": "brother", "translation": "bror"},
+        {"english": "sister", "translation": "søster"},
+        {"english": "grandmother", "translation": "bedstemor"},
+        {"english": "grandfather", "translation": "bedstefar"},
+        {"english": "aunt", "translation": "tante"},
+        {"english": "uncle", "translation": "onkel"}
+    ]
+}
