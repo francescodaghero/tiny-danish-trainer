@@ -31,15 +31,13 @@
         {"english": "playroom", "translation": "legetøjrum"},
         {"english": "sunroom", "translation": "solrum"},
         {"english": "library", "translation": "bibliotek"},
-        {"english": "gym", "translation": "fitnesscentrum"},
+        {"english": "gym", "translation": "fitnesscentrum"}
     ],
     "family": [
         {"english": "mother", "translation": "mor"},
         {"english": "father", "translation": "far"},
         {"english": "brother", "translation": "bror"},
         {"english": "sister", "translation": "søster"},
-        {"english": "grandmother", "translation": "bedstemor"},
-        {"english": "grandfather", "translation": "bedstefar"},
         {"english": "aunt", "translation": "tante"},
         {"english": "uncle", "translation": "onkel"}
     ]

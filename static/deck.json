@@ -1,230 +1,663 @@
-[
-    {
-        "english": "big",
-        "translation": "stor"
-    },
-    {
-        "english": "thin",
-        "translation": "tynd"
-    },
-    {
-        "english": "safe",
-        "translation": "tryg"
-    },
-    {
-        "english": "fresh",
-        "translation": "frisk"
-    },
-    {
-        "english": "stupid",
-        "translation": "dum"
-    },
-    {
-        "english": "polite",
-        "translation": "høflig"
-    },
-    {
-        "english": "happy",
-        "translation": "glad"
-    },
-    {
-        "english": "funny",
-        "translation": "sjov"
-    },
-    {
-        "english": "pretty",
-        "translation": "pæn"
-    },
-    {
-        "english": "warm",
-        "translation": "varm"
-    },
-    {
-        "english": "open",
-        "translation": "åben"
-    },
-    {
-        "english": "cozy",
-        "translation": "hyggelig"
-    },
-    {
-        "english": "lazy",
-        "translation": "doven"
-    },
-    {
-        "english": "overweight",
-        "translation": "overvægtig"
-    },
-    {
-        "english": "cheap",
-        "translation": "billig"
-    },
-    {
-        "english": "tall",
-        "translation": "høj"
-    },
-    {
-        "english": "young",
-        "translation": "ung"
-    },
-    {
-        "english": "good",
-        "translation": "god"
-    },
-    {
-        "english": "mature",
-        "translation": "moden"
-    },
-    {
-        "english": "satisfied",
-        "translation": "tilfreds"
-    },
-    {
-        "english": "difficult",
-        "translation": "svær"
-    },
-    {
-        "english": "long",
-        "translation": "lang"
-    },
-    {
-        "english": "new",
-        "translation": "ny"
-    },
-    {
-        "english": "friendly",
-        "translation": "venlig"
-    },
-    {
-        "english": "exciting",
-        "translation": "spændende"
-    },
-    {
-        "english": "sick",
-        "translation": "syg"
-    },
-    {
-        "english": "fast",
-        "translation": "hurtig"
-    },
-    {
-        "english": "positive",
-        "translation": "positiv"
-    },
-    {
-        "english": "patient",
-        "translation": "tålmodig"
-    },
-    {
-        "english": "old",
-        "translation": "gammel"
-    },
-    {
-        "english": "unsafe",
-        "translation": "utryg"
-    },
-    {
-        "english": "small",
-        "translation": "lille"
-    },
-    {
-        "english": "closed",
-        "translation": "lukket"
-    },
-    {
-        "english": "slow",
-        "translation": "langsom"
-    },
-    {
-        "english": "tired",
-        "translation": "træt"
-    },
-    {
-        "english": "bad",
-        "translation": "dårlig"
-    },
-    {
-        "english": "creepy",
-        "translation": "uhyggelig"
-    },
-    {
-        "english": "ugly",
-        "translation": "grim"
-    },
-    {
-        "english": "expensive",
-        "translation": "dyr"
-    },
-    {
-        "english": "negative",
-        "translation": "negativ"
-    },
-    {
-        "english": "smart",
-        "translation": "klog"
-    },
-    {
-        "english": "rude",
-        "translation": "uhøflig"
-    },
-    {
-        "english": "fat",
-        "translation": "tyk"
-    },
-    {
-        "english": "dissatisfied",
-        "translation": "utilfreds"
-    },
-    {
-        "english": "sweet",
-        "translation": "sød"
-    },
-    {
-        "english": "immature",
-        "translation": "umoden"
-    },
-    {
-        "english": "boring",
-        "translation": "kedelig"
-    },
-    {
-        "english": "short",
-        "translation": "kort"
-    },
-    {
-        "english": "hardworking",
-        "translation": "flittig"
-    },
-    {
-        "english": "sorry",
-        "translation": "ked af det"
-    },
-    {
-        "english": "impatient",
-        "translation": "utålmodig"
-    },
-    {
-        "english": "low",
-        "translation": "lav"
-    },
-    {
-        "english": "unfriendly",
-        "translation": "uvenlig"
-    },
-    {
-        "english": "easy",
-        "translation": "let"
-    },
-    {
-        "english": "cold",
-        "translation": "kold"
-    },
-    {
-        "english": "healthy",
-        "translation": "rask"
-    },
-    {
-        "english": "underweight",
-        "translation": "undervægtig"
-    }
-]
+{
+    "adjectives": [
+        {
+            "english": "big",
+            "translation": "stor"
+        },
+        {
+            "english": "thin",
+            "translation": "tynd"
+        },
+        {
+            "english": "safe",
+            "translation": "tryg"
+        },
+        {
+            "english": "fresh",
+            "translation": "frisk"
+        },
+        {
+            "english": "stupid",
+            "translation": "dum"
+        },
+        {
+            "english": "polite",
+            "translation": "høflig"
+        },
+        {
+            "english": "happy",
+            "translation": "glad"
+        },
+        {
+            "english": "funny",
+            "translation": "sjov"
+        },
+        {
+            "english": "pretty",
+            "translation": "pæn"
+        },
+        {
+            "english": "warm",
+            "translation": "varm"
+        },
+        {
+            "english": "open",
+            "translation": "åben"
+        },
+        {
+            "english": "cozy",
+            "translation": "hyggelig"
+        },
+        {
+            "english": "lazy",
+            "translation": "doven"
+        },
+        {
+            "english": "overweight",
+            "translation": "overvægtig"
+        },
+        {
+            "english": "cheap",
+            "translation": "billig"
+        },
+        {
+            "english": "tall",
+            "translation": "høj"
+        },
+        {
+            "english": "young",
+            "translation": "ung"
+        },
+        {
+            "english": "good",
+            "translation": "god"
+        },
+        {
+            "english": "mature",
+            "translation": "moden"
+        },
+        {
+            "english": "satisfied",
+            "translation": "tilfreds"
+        },
+        {
+            "english": "difficult",
+            "translation": "svær"
+        },
+        {
+            "english": "long",
+            "translation": "lang"
+        },
+        {
+            "english": "new",
+            "translation": "ny"
+        },
+        {
+            "english": "friendly",
+            "translation": "venlig"
+        },
+        {
+            "english": "exciting",
+            "translation": "spændende"
+        },
+        {
+            "english": "sick",
+            "translation": "syg"
+        },
+        {
+            "english": "fast",
+            "translation": "hurtig"
+        },
+        {
+            "english": "positive",
+            "translation": "positiv"
+        },
+        {
+            "english": "patient",
+            "translation": "tålmodig"
+        },
+        {
+            "english": "old",
+            "translation": "gammel"
+        },
+        {
+            "english": "unsafe",
+            "translation": "utryg"
+        },
+        {
+            "english": "small",
+            "translation": "lille"
+        },
+        {
+            "english": "closed",
+            "translation": "lukket"
+        },
+        {
+            "english": "slow",
+            "translation": "langsom"
+        },
+        {
+            "english": "tired",
+            "translation": "træt"
+        },
+        {
+            "english": "bad",
+            "translation": "dårlig"
+        },
+        {
+            "english": "creepy",
+            "translation": "uhyggelig"
+        },
+        {
+            "english": "ugly",
+            "translation": "grim"
+        },
+        {
+            "english": "expensive",
+            "translation": "dyr"
+        },
+        {
+            "english": "negative",
+            "translation": "negativ"
+        },
+        {
+            "english": "smart",
+            "translation": "klog"
+        },
+        {
+            "english": "rude",
+            "translation": "uhøflig"
+        },
+        {
+            "english": "fat",
+            "translation": "tyk"
+        },
+        {
+            "english": "dissatisfied",
+            "translation": "utilfreds"
+        },
+        {
+            "english": "sweet",
+            "translation": "sød"
+        },
+        {
+            "english": "immature",
+            "translation": "umoden"
+        },
+        {
+            "english": "boring",
+            "translation": "kedelig"
+        },
+        {
+            "english": "short",
+            "translation": "kort"
+        },
+        {
+            "english": "hardworking",
+            "translation": "flittig"
+        },
+        {
+            "english": "sorry",
+            "translation": "ked af det"
+        },
+        {
+            "english": "impatient",
+            "translation": "utålmodig"
+        },
+        {
+            "english": "low",
+            "translation": "lav"
+        },
+        {
+            "english": "unfriendly",
+            "translation": "uvenlig"
+        },
+        {
+            "english": "easy",
+            "translation": "let"
+        },
+        {
+            "english": "cold",
+            "translation": "kold"
+        },
+        {
+            "english": "healthy",
+            "translation": "rask"
+        },
+        {
+            "english": "underweight",
+            "translation": "undervægtig"
+        }
+    ],
+    "preprositions": [
+        {
+            "sentence": "Jeg skal [...] skole i morgen.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Vi vil gerne [...] biografen på fredag aften.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Hun skal [...] Netto efter arbejde.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Børnene vil [...] svømmehallen lørdag morgen.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Jeg skal [...] byen med mine venner i aften.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Han skal [...] arbejde tidligt mandag morgen.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Vi vil sidde [...] biblioteket hele eftermiddagen.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "De skal mødes [...] café fredag aften.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Jeg vil spise [...] restaurant i weekenden.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Hun skal [...] lægen tirsdag eftermiddag.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "Jeg vil [...] frisøren i morgen tidlig.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "Vi skal [...] bageren før arbejde.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "De vil [...] fest lørdag aften.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "Jeg skal [...] Aarhus i weekenden.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "Hun vil [...] hjem efter skole.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg skal [...] ud til en veninde i aften.",
+            "preposition": []
+        },
+        {
+            "sentence": "Vi skal i parken [...] eftermiddag.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Han vil gerne blive hjemme [...] aften.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Jeg skal tidligt op [...] morgen.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "De skal besøge familien [...] weekenden.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Vi skal arbejde [...] lørdag.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Hun skal træne [...] mandag morgen.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg vil mødes med ham [...] tirsdag eftermiddag.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg var [...] skole [...] går.",
+            "preposition": [
+                "i",
+                "i"
+            ]
+        },
+        {
+            "sentence": "Vi var gerne [...] biografen [...] fredags aftes.",
+            "preposition": [
+                "i",
+                "i"
+            ]
+        },
+        {
+            "sentence": "Hun var [...] Netto efter arbejde.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Børnene var [...] svømmehallen [...] lørdag morgen.",
+            "preposition": [
+                "i",
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg var [...] byen med mine venner i aftes.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Han var [...] arbejde tidligt mandag morgen.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Vi sad [...] biblioteket hele eftermiddagen.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "De mødtes [...] café fredag aften.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Jeg spiste [...] restaurant [...] weekenden.",
+            "preposition": [
+                "på",
+                "i"
+            ]
+        },
+        {
+            "sentence": "Hun var [...] lægen tirsdag eftermiddag.",
+            "preposition": [
+                "hos"
+            ]
+        },
+        {
+            "sentence": "Jeg var [...] frisøren [...] går morges.",
+            "preposition": [
+                "hos",
+                "i"
+            ]
+        },
+        {
+            "sentence": "Vi var [...] bageren før arbejde.",
+            "preposition": [
+                "hos"
+            ]
+        },
+        {
+            "sentence": "De var [...] fest lørdag aften.",
+            "preposition": [
+                "til"
+            ]
+        },
+        {
+            "sentence": "Jeg var [...] Aarhus i weekenden.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Hun var [...] hjem efter skole.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg var [...] ude til en veninde i aftes.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Vi var i parken [...] eftermiddag.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Han blev hjemme [...] aftes.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Jeg stod tidligt op [...] morges.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "De besøgte familien [...] weekenden.",
+            "preposition": [
+                "i"
+            ]
+        },
+        {
+            "sentence": "Vi arbejdede [...] lørdag.",
+            "preposition": [
+                "på"
+            ]
+        },
+        {
+            "sentence": "Hun trænede [...] mandag morgen.",
+            "preposition": [
+                ""
+            ]
+        },
+        {
+            "sentence": "Jeg mødtes med ham [...] tirsdag eftermiddag.",
+            "preposition": [
+                ""
+            ]
+        }
+    ],
+    "sentences": [
+        {
+            "english": "It is sunny",
+            "translation": "Solen skinner"
+        },
+        {
+            "english": "It is raining",
+            "translation": "Det regner"
+        },
+        {
+            "english": "It is snowing",
+            "translation": "Det sner"
+        },
+        {
+            "english": "It is windy",
+            "translation": "Det blæser"
+        },
+        {
+            "english": "It is cloudy",
+            "translation": "Det er overskyet"
+        },
+        {
+            "english": "It is hot",
+            "translation": "Det er varmt"
+        },
+        {
+            "english": "It is cold",
+            "translation": "Det er koldt"
+        },
+        {
+            "english": "It is humid",
+            "translation": "Det er fugtigt"
+        },
+        {
+            "english": "It is stormy",
+            "translation": "Det er stormfuldt"
+        },
+        {
+            "english": "It is foggy",
+            "translation": "Det er tåget"
+        },
+        {
+            "english": "It is icy",
+            "translation": "Det er iset"
+        }
+    ],
+    "house": [
+        {
+            "english": "kitchen",
+            "translation": "køkken"
+        },
+        {
+            "english": "living room",
+            "translation": "stue"
+        },
+        {
+            "english": "bedroom",
+            "translation": "soveværelse"
+        },
+        {
+            "english": "bathroom",
+            "translation": "badeværelse"
+        },
+        {
+            "english": "dining room",
+            "translation": "spisestue"
+        },
+        {
+            "english": "garage",
+            "translation": "garage"
+        },
+        {
+            "english": "attic",
+            "translation": "loft"
+        },
+        {
+            "english": "basement",
+            "translation": "kælder"
+        },
+        {
+            "english": "garden",
+            "translation": "have"
+        },
+        {
+            "english": "balcony",
+            "translation": "altan"
+        },
+        {
+            "english": "hallway",
+            "translation": "gang"
+        },
+        {
+            "english": "living room",
+            "translation": "opholdsstue"
+        },
+        {
+            "english": "office",
+            "translation": "kontor"
+        },
+        {
+            "english": "laundry room",
+            "translation": "vaskerum"
+        },
+        {
+            "english": "pantry",
+            "translation": "spisekammer"
+        },
+        {
+            "english": "playroom",
+            "translation": "legetøjrum"
+        },
+        {
+            "english": "sunroom",
+            "translation": "solrum"
+        },
+        {
+            "english": "library",
+            "translation": "bibliotek"
+        },
+        {
+            "english": "gym",
+            "translation": "fitnesscentrum"
+        }
+    ],
+    "family": [
+        {
+            "english": "mother",
+            "translation": "mor"
+        },
+        {
+            "english": "father",
+            "translation": "far"
+        },
+        {
+            "english": "brother",
+            "translation": "bror"
+        },
+        {
+            "english": "sister",
+            "translation": "søster"
+        },
+        {
+            "english": "aunt",
+            "translation": "tante"
+        },
+        {
+            "english": "uncle",
+            "translation": "onkel"
+        }
+    ]
+}

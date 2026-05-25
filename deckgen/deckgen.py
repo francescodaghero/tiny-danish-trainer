@@ -50,13 +50,24 @@ def numbers_deckgen(language_path: str, output_path: str):
 
 def general_deckgen(language_path: str, output_path: str):
     # Just copy the file
+    deck = {}
     with open(f"{language_path}/adjectives.json", "r") as f:
         data_adj = json.load(f)
+    deck["adjectives"] = data_adj
+
+    with open(f"{language_path}/prepositions.json", "r") as f:
+        data_pronouns = json.load(f)
+    deck["preprositions"] = data_pronouns
 
     # Merge with nouns
-    with open(f"{language_path}/nouns.json", "r") as f:
+    with open(f"{language_path}/others.json", "r") as f:
         data_nouns = json.load(f)
-    data = data_adj + data_nouns
+    for key in data_nouns:
+        if key in deck:
+            deck[key].extend(data_nouns[key])
+        else:
+            deck[key] = data_nouns[key] 
+    data = deck
     with open(f"{output_path}/deck.json", "w") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     
