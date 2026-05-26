@@ -92,22 +92,73 @@ def _apply_failed_only(cards, app_state: AppState, failed_only):
     return [card for card in cards if card.id in allowed]
 
 
+def _build_preposition_card(row, *, index, run_config, universe):
+    # Preposition cards always prompt with the sentence and answer with preposition text.
+    answer_text = str(row.translation or "")
+    normalized_answer = normalize_answer(answer_text)
+    non_empty_universe = [item for item in universe if normalize_answer(item)]
+    can_build_mcq = bool(normalized_answer) and len(set(non_empty_universe)) >= 2
+
+    answer_kind = _weighted_answer_kind(run_config, allow_audio=False)
+    if answer_kind == "mcq" and not can_build_mcq:
+        answer_kind = "text"
+
+    card_id = _make_id(
+        f"preposition|{index}|{row.english}|{answer_text}|{answer_kind}"
+    )
+    mcq_universe = non_empty_universe if can_build_mcq else []
+
+    return StudyCard(
+        id=card_id,
+        mode=GENERAL_MODE,
+        domain="general:prepositions",
+        prompt_kind="text",
+        answer_kind="mcq" if answer_kind == "mcq" else "text",
+        prompt_primary=row.english,
+        prompt_secondary="Fill in the preposition",
+        accepted_answers=[answer_text],
+        choices=_build_mcq(answer_text, mcq_universe) if answer_kind == "mcq" else [],
+    )
+
+
 def build_general_cards(app_state: AppState, run_config: RunConfig):
     entries = list(app_state.library.general_entries)
-    universe = [row.translation for row in entries]
+    group_universes: dict[str, list[str]] = {}
+    for row in entries:
+        group_name = str(row.group or "default")
+        group_universes.setdefault(group_name, []).append(row.translation)
     cards = []
 
     for index, row in enumerate(entries):
+        group_name = str(row.group or "default")
+        universe = group_universes.get(group_name, [row.translation])
+
+        if group_name.lower() == "prepositions":
+            cards.append(
+                _build_preposition_card(
+                    row,
+                    index=index,
+                    run_config=run_config,
+                    universe=universe,
+                )
+            )
+            continue
+
+        can_build_mcq = len(universe) >= 2
+
         answer_kind = _weighted_answer_kind(run_config, allow_audio=False)
+        if answer_kind == "mcq" and not can_build_mcq:
+            answer_kind = "text"
+
         card_id = _make_id(
-            f"general|{index}|{row.english}|{row.translation}|{answer_kind}"
+            f"general|{group_name}|{index}|{row.english}|{row.translation}|{answer_kind}"
         )
         choices = _build_mcq(row.translation, universe) if answer_kind == "mcq" else []
         cards.append(
             StudyCard(
                 id=card_id,
                 mode=GENERAL_MODE,
-                domain="general",
+                domain=f"general:{group_name}",
                 prompt_kind="text",
                 answer_kind="mcq" if answer_kind == "mcq" else "text",
                 prompt_primary=row.english,

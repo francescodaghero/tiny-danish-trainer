@@ -38,6 +38,7 @@ class DictLikeState:
 
 @dataclasses.dataclass
 class GeneralEntry:
+    group: str
     english: str
     translation: str
 
