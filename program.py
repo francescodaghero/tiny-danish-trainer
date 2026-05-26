@@ -6,8 +6,8 @@ from pyscript import web, when
 from models import (
     GENERAL_MODE,
     NUMBERS_MODE,
+    QUIZ_MODES,
     TABS,
-    TRAINING_MODES,
     VERBS_MODE,
     app_state,
     ui_state,
@@ -154,7 +154,7 @@ def _sync_full_ratio_label(full_ratio):
 
 def set_active_tab(tab_name):
     if tab_name not in TABS:
-        tab_name = "train"
+        tab_name = "quiz"
     ui_state.active_tab = tab_name
 
     for tab in TABS:
@@ -183,7 +183,7 @@ def _render_error():
 def _render_config():
     config = app_state.session.run_config
 
-    set_value("training-mode", ui_state.selected_training_mode)
+    set_value("quiz-mode", ui_state.selected_quiz_mode)
     set_value("max-cards", config.max_cards)
     mcq_ratio = sanitize_ratio(config.mcq_ratio, 50)
     text_ratio = 100 - mcq_ratio
@@ -195,7 +195,7 @@ def _render_config():
     _sync_ratio_labels(mcq_ratio)
     _sync_full_ratio_label(config.full_ratio)
 
-    mode = ui_state.selected_training_mode
+    mode = ui_state.selected_quiz_mode
     set_hidden("failed-only-wrap", False)
 
     failed_only_el = el("failed-only")
@@ -408,9 +408,9 @@ def _render_study():
     session = app_state.session
     in_study = session.stage == "study"
     completed = session.stage == "complete"
-    set_hidden("train-config", in_study or completed)
-    set_hidden("train-study", not in_study)
-    set_hidden("train-complete", not completed)
+    set_hidden("quiz-config", in_study or completed)
+    set_hidden("quiz-study", not in_study)
+    set_hidden("quiz-complete", not completed)
 
     if in_study:
         card = current_card(app_state)
@@ -489,13 +489,13 @@ def render():
 def _read_run_config_from_form():
     config = app_state.session.run_config
 
-    mode_input = el("training-mode")
+    mode_input = el("quiz-mode")
     mode_value = mode_input.value if mode_input is not None else GENERAL_MODE
-    if mode_value not in TRAINING_MODES:
+    if mode_value not in QUIZ_MODES:
         mode_value = GENERAL_MODE
 
-    config.training_mode = mode_value
-    ui_state.selected_training_mode = mode_value
+    config.quiz_mode = mode_value
+    ui_state.selected_quiz_mode = mode_value
 
     failed_only = el("failed-only")
     config.failed_only = bool(
@@ -512,19 +512,19 @@ def _read_run_config_from_form():
         (el("full-ratio").value if el("full-ratio") else 50), 50
     )
 
-    if config.training_mode == GENERAL_MODE:
+    if config.quiz_mode == GENERAL_MODE:
         if config.mcq_ratio <= 0 and config.text_ratio <= 0:
             ui_state.error = (
                 "Set at least one non-zero ratio for multiple-choice or type-in."
             )
             return False
-    elif config.training_mode == VERBS_MODE:
+    elif config.quiz_mode == VERBS_MODE:
         if config.mcq_ratio <= 0 and config.text_ratio <= 0 and config.full_ratio <= 0:
             ui_state.error = (
                 "Set a non-zero ratio for multiple-choice, type-in, or full cards."
             )
             return False
-    elif config.training_mode == NUMBERS_MODE:
+    elif config.quiz_mode == NUMBERS_MODE:
         if config.mcq_ratio <= 0 and config.text_ratio <= 0:
             ui_state.error = "Set at least one non-zero ratio for numbers answer type."
             return False
@@ -564,17 +564,17 @@ def on_tab_click(event):
     button = target.closest("button[data-tab]")
     if not button:
         return
-    set_active_tab(button.getAttribute("data-tab") or "train")
+    set_active_tab(button.getAttribute("data-tab") or "quiz")
     _schedule_persist()
     render()
 
 
-@when("change", "#training-mode")
-def on_training_mode_change(event):
+@when("change", "#quiz-mode")
+def on_quiz_mode_change(event):
     mode = event.target.value
-    if mode in TRAINING_MODES:
-        ui_state.selected_training_mode = mode
-        app_state.session.run_config.training_mode = mode
+    if mode in QUIZ_MODES:
+        ui_state.selected_quiz_mode = mode
+        app_state.session.run_config.quiz_mode = mode
     render()
 
 
@@ -593,8 +593,8 @@ def on_full_ratio_change(event):
     _sync_full_ratio_label(full_ratio)
 
 
-@when("submit", "#train-config-form")
-def on_train_start(event):
+@when("submit", "#quiz-config-form")
+def on_quiz_start(event):
     event.preventDefault()
     ui_state.error = None
     if not _read_run_config_from_form():
@@ -722,7 +722,7 @@ async def bootstrap():
     finally:
         ui_state.loading = False
         if ui_state.active_tab not in TABS:
-            ui_state.active_tab = "train"
+            ui_state.active_tab = "quiz"
         render()
 
 

@@ -4,8 +4,8 @@ from typing import Any, Optional
 GENERAL_MODE = "general"
 VERBS_MODE = "verbs"
 NUMBERS_MODE = "numbers"
-TRAINING_MODES = (GENERAL_MODE, VERBS_MODE, NUMBERS_MODE)
-TABS = ("train", "stats")
+QUIZ_MODES = (GENERAL_MODE, VERBS_MODE, NUMBERS_MODE)
+TABS = ("quiz", "stats")
 
 DECK_FILEPATH = "./static/deck.json"
 VERBS_FILEPATH = "./static/verbs.json"
@@ -98,7 +98,7 @@ class StatsState(DictLikeState):
 
 @dataclasses.dataclass
 class RunConfig(DictLikeState):
-    training_mode: str = GENERAL_MODE
+    quiz_mode: str = GENERAL_MODE
     failed_only: bool = False
     max_cards: int = 20
     mcq_ratio: int = 50
@@ -145,8 +145,8 @@ class LibraryState(DictLikeState):
 
 @dataclasses.dataclass
 class UIState(DictLikeState):
-    active_tab: str = "train"
-    selected_training_mode: str = GENERAL_MODE
+    active_tab: str = "quiz"
+    selected_quiz_mode: str = GENERAL_MODE
     loading: bool = True
     error: Optional[str] = None
     ready: bool = False

@@ -286,9 +286,9 @@ def build_number_cards(app_state, run_config):
 
 
 def build_run_cards(app_state, run_config):
-    if run_config.training_mode == GENERAL_MODE:
+    if run_config.quiz_mode == GENERAL_MODE:
         cards = build_general_cards(app_state, run_config)
-    elif run_config.training_mode == VERBS_MODE:
+    elif run_config.quiz_mode == VERBS_MODE:
         cards = build_verb_cards(app_state, run_config)
     else:
         cards = build_number_cards(app_state, run_config)

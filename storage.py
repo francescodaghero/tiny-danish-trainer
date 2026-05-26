@@ -45,8 +45,10 @@ async def hydrate_persistence(app_state: AppState, ui_state: UIState):
 
     raw_ui = persisted.get("ui")
     if isinstance(raw_ui, dict):
-        tab = str(raw_ui.get("active_tab", "train"))
-        if tab in ("train", "stats"):
+        tab = str(raw_ui.get("active_tab", "quiz"))
+        if tab == "train":
+            tab = "quiz"
+        if tab in ("quiz", "stats"):
             ui_state.active_tab = tab
 
     return persisted
@@ -61,6 +63,6 @@ async def persist_persistence(app_state: AppState, ui_state: UIState, persisted)
 async def clear_persistence(app_state: AppState, ui_state: UIState, persisted):
     app_state.stats.card_stats = {}
     app_state.stats.wrong_card_ids = set()
-    ui_state.active_tab = "train"
+    ui_state.active_tab = "quiz"
     persisted.clear()
     await persisted.sync()

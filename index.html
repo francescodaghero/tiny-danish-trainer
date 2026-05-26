@@ -17,7 +17,7 @@
 					<div class="card-body">
 						<h1 class="text-4xl font-black tracking-tight">Tiny Danish Trainer</h1>
 						<nav id="tabs-nav" class="flex gap-2 mt-3">
-							<button id="tab-train" data-tab="train" class="btn btn-primary">Train</button>
+							<button id="tab-quiz" data-tab="quiz" class="btn btn-primary">Quiz</button>
 							<button id="tab-stats" data-tab="stats" class="btn btn-outline">Stats</button>
 						</nav>
 					</div>
@@ -31,17 +31,17 @@
 					<h2 class="text-2xl font-bold">Loading static data...</h2>
 				</section>
 
-				<section id="section-train" class="space-y-6">
-					<section id="train-config" class="card bg-base-100 border border-base-300 shadow-sm">
+				<section id="section-quiz" class="space-y-6">
+					<section id="quiz-config" class="card bg-base-100 border border-base-300 shadow-sm">
 						<div class="card-body">
-							<h2 class="text-2xl font-bold">Train Setup</h2>
-							<form id="train-config-form" class="grid gap-4 md:grid-cols-2">
+							<h2 class="text-2xl font-bold">Quiz Setup</h2>
+							<form id="quiz-config-form" class="grid gap-4 md:grid-cols-2">
 								<div class="form-control md:col-span-2">
-									<label class="label"><span class="label-text">Training mode</span></label>
-									<select id="training-mode" class="select select-bordered w-full">
-										<option value="general">General Training</option>
-										<option value="verbs">Verbs Training</option>
-										<option value="numbers">Numbers Training</option>
+									<label class="label"><span class="label-text">Quiz mode</span></label>
+									<select id="quiz-mode" class="select select-bordered w-full">
+										<option value="general">General Quiz</option>
+										<option value="verbs">Verbs Quiz</option>
+										<option value="numbers">Numbers Quiz</option>
 									</select>
 								</div>
 
@@ -88,13 +88,13 @@
 								</div>
 
 								<div class="md:col-span-2">
-									<button id="start-run-btn" class="btn btn-primary w-full" type="submit">Start training run</button>
+									<button id="start-run-btn" class="btn btn-primary w-full" type="submit">Start</button>
 								</div>
 							</form>
 						</div>
 					</section>
 
-					<section id="train-study" class="card bg-base-100 border border-base-300 shadow-sm hidden">
+					<section id="quiz-study" class="card bg-base-100 border border-base-300 shadow-sm hidden">
 						<div class="card-body">
 							<p id="study-meta" class="text-sm text-base-content/70"></p>
 							<h3 id="study-prompt-primary" class="text-3xl font-black"></h3>
@@ -132,7 +132,7 @@
 						</div>
 					</section>
 
-					<section id="train-complete" class="card bg-base-100 border border-base-300 shadow-sm hidden">
+					<section id="quiz-complete" class="card bg-base-100 border border-base-300 shadow-sm hidden">
 						<div class="card-body">
 							<h3 class="text-2xl font-bold">Run complete</h3>
 							<div class="grid gap-3 sm:grid-cols-2">
@@ -187,6 +187,6 @@
 
 			</div>
 		</main>
-		<script type="py" config="./python.toml?v=20260526a" src="./program.py?v=20260526a"></script>
+		<script type="py" config="./python.toml?v=20260526b" src="./program.py?v=20260526b"></script>
 	</body>
 </html>
