@@ -20,15 +20,13 @@ from session import (
     back_to_config,
     current_card,
     has_wrong_cards,
-    normalize_answer,
     reset_stats_and_wrong,
-    sanitize_int,
-    sanitize_ratio,
     start_run,
     stats_totals,
     submit_current_answer,
 )
 from storage import clear_persistence, hydrate_persistence, persist_persistence
+from utils import normalize_answer, sanitize_int, sanitize_ratio
 
 _persisted_store = None
 

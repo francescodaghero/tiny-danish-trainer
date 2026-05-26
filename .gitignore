@@ -6,3 +6,5 @@ runtime-state.json
 /audio
 output/
 app/static
+*.pyc
+__pycache__/

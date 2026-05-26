@@ -3,5 +3,7 @@ packages = []
 [files]
 "./models.py" = "models.py"
 "./parsing.py" = "parsing.py"
+"./card_gen.py" = "card_gen.py"
 "./session.py" = "session.py"
 "./storage.py" = "storage.py"
+"./utils.py" = "utils.py"
