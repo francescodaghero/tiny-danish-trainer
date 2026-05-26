@@ -18,6 +18,7 @@
 						<h1 class="text-4xl font-black tracking-tight">Tiny Danish Trainer</h1>
 						<nav id="tabs-nav" class="flex gap-2 mt-3">
 							<button id="tab-quiz" data-tab="quiz" class="btn btn-primary">Quiz</button>
+							<button id="tab-review" data-tab="review" class="btn btn-outline">Review</button>
 							<button id="tab-stats" data-tab="stats" class="btn btn-outline">Stats</button>
 						</nav>
 					</div>
@@ -146,6 +147,27 @@
 					</section>
 				</section>
 
+				<section id="section-review" class="card bg-base-100 border border-base-300 shadow-sm hidden">
+					<div class="card-body gap-4">
+						<h2 class="text-2xl font-bold">Review</h2>
+						<div class="grid gap-4 md:grid-cols-2">
+							<div class="form-control">
+								<label class="label"><span class="label-text">Review mode</span></label>
+								<select id="review-mode" class="select select-bordered w-full">
+									<option value="general">General</option>
+									<option value="verbs">Verbs</option>
+									<option value="numbers">Numbers</option>
+								</select>
+							</div>
+							<div id="review-key-wrap" class="form-control hidden">
+								<label class="label"><span id="review-key-label" class="label-text">Key</span></label>
+								<select id="review-key" class="select select-bordered w-full"></select>
+							</div>
+						</div>
+						<div id="review-table"></div>
+					</div>
+				</section>
+
 				<section id="section-stats" class="card bg-base-100 border border-base-300 shadow-sm hidden">
 					<div class="card-body">
 						<div class="flex items-center justify-between gap-3">
@@ -187,6 +209,6 @@
 
 			</div>
 		</main>
-		<script type="py" config="./python.toml?v=20260526b" src="./program.py?v=20260526b"></script>
+		<script type="py" config="./python.toml?v=20260526c" src="./program.py?v=20260526c"></script>
 	</body>
 </html>

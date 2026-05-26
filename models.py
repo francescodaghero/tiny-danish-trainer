@@ -5,7 +5,7 @@ GENERAL_MODE = "general"
 VERBS_MODE = "verbs"
 NUMBERS_MODE = "numbers"
 QUIZ_MODES = (GENERAL_MODE, VERBS_MODE, NUMBERS_MODE)
-TABS = ("quiz", "stats")
+TABS = ("quiz", "review", "stats")
 
 DECK_FILEPATH = "./static/deck.json"
 VERBS_FILEPATH = "./static/verbs.json"
@@ -147,6 +147,9 @@ class LibraryState(DictLikeState):
 class UIState(DictLikeState):
     active_tab: str = "quiz"
     selected_quiz_mode: str = GENERAL_MODE
+    selected_review_mode: str = GENERAL_MODE
+    selected_review_general_key: str = ""
+    selected_review_numbers_key: str = ""
     loading: bool = True
     error: Optional[str] = None
     ready: bool = False

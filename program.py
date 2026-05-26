@@ -26,6 +26,7 @@ from session import (
     submit_current_answer,
 )
 from storage import clear_persistence, hydrate_persistence, persist_persistence
+from table_gen import build_review_view
 from utils import normalize_answer, sanitize_int, sanitize_ratio
 
 _persisted_store = None
@@ -477,12 +478,43 @@ def _render_stats():
         )
 
 
+def _render_review():
+    mode = ui_state.selected_review_mode
+    if mode not in QUIZ_MODES:
+        mode = GENERAL_MODE
+        ui_state.selected_review_mode = mode
+
+    set_value("review-mode", mode)
+
+    selected_key = ""
+    if mode == GENERAL_MODE:
+        selected_key = ui_state.selected_review_general_key
+    elif mode == NUMBERS_MODE:
+        selected_key = ui_state.selected_review_numbers_key
+
+    view = build_review_view(app_state.library, mode, selected_key)
+
+    if mode == GENERAL_MODE:
+        ui_state.selected_review_general_key = view["resolved_key"]
+    elif mode == NUMBERS_MODE:
+        ui_state.selected_review_numbers_key = view["resolved_key"]
+
+    set_hidden("review-key-wrap", not view["show_key_selector"])
+    set_text("review-key-label", view["key_label"])
+    set_html("review-key", view["key_options_html"])
+    if view["show_key_selector"]:
+        set_value("review-key", view["resolved_key"])
+
+    set_html("review-table", view["table_html"])
+
+
 def render():
     set_hidden("loading-section", not ui_state.loading)
     set_active_tab(ui_state.active_tab)
     _render_error()
     _render_config()
     _render_study()
+    _render_review()
     _render_stats()
 
 
@@ -575,6 +607,25 @@ def on_quiz_mode_change(event):
     if mode in QUIZ_MODES:
         ui_state.selected_quiz_mode = mode
         app_state.session.run_config.quiz_mode = mode
+    render()
+
+
+@when("change", "#review-mode")
+def on_review_mode_change(event):
+    mode = event.target.value
+    if mode in QUIZ_MODES:
+        ui_state.selected_review_mode = mode
+    render()
+
+
+@when("change", "#review-key")
+def on_review_key_change(event):
+    key = str(event.target.value or "")
+    mode = ui_state.selected_review_mode
+    if mode == GENERAL_MODE:
+        ui_state.selected_review_general_key = key
+    elif mode == NUMBERS_MODE:
+        ui_state.selected_review_numbers_key = key
     render()
 
 

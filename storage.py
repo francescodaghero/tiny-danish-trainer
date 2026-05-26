@@ -48,7 +48,7 @@ async def hydrate_persistence(app_state: AppState, ui_state: UIState):
         tab = str(raw_ui.get("active_tab", "quiz"))
         if tab == "train":
             tab = "quiz"
-        if tab in ("quiz", "stats"):
+        if tab in ("quiz", "review", "stats"):
             ui_state.active_tab = tab
 
     return persisted

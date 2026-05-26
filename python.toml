@@ -6,4 +6,5 @@ packages = []
 "./card_gen.py" = "card_gen.py"
 "./session.py" = "session.py"
 "./storage.py" = "storage.py"
+"./table_gen.py" = "table_gen.py"
 "./utils.py" = "utils.py"
